@@ -63,10 +63,12 @@ a {
 .navi {
   display: flex;
   align-items: center;
+  
 }
 .navi-menu {
   display: flex;
   gap: 40px;
+  
 }
 .menu-list {
   padding-top: 24px;
@@ -93,6 +95,8 @@ a {
 }
 
 .navi-menu .navigation {
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
