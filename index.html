@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap"
@@ -24,16 +24,18 @@
   <body>
     
     <header class="header">
+      <div class="container">
+
         <div class="header_container">
           
           
-          <div class="header_inner">
+          
 
-            <a href="./index.html" class="logo-dark">
-              WEB<span class="logo-accen">Studio</span></a>
-              
-              
-              <nav>
+          
+          
+          <nav class="navi">
+                <a href="./index.html" class="logo-dark">
+                  WEB<span class="logo-accen">Studio</span></a>
                 <ul class="navi-menu">
                   
                   <li class="menu_list"><a class="navigation" href="./index.html">Portfolio</a></li>
@@ -45,7 +47,7 @@
                 
                 
                 
-                <li class="menu_list"><a class="navigation" href="">Contacts</a></li>
+                <li class="li_end"><a class="navigation" href="">Contacts</a></li>
                 
                 
                 <li>
@@ -76,8 +78,9 @@
                 
                 
               </address>
-            </div>
+            
         </div>
+      </div>
       </header>
 
     <main>
@@ -86,18 +89,20 @@
       
       <!-- Hero section -->
       <section class="hero-section">
-        
+        <div class="hero_container">
 
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <div class="button-container">
-
+          
+  
             <button class="button-section" type="button">Order Service</button>
-          </div>
+        </div>
+
+          
         
       </section>
 
       <!-- Our advantages section -->
-      <section class="section">
+      <section class="section_advantages">
         <div class="container">
 
           <h2 hidden>Our advantages</h2>
@@ -139,42 +144,54 @@
 
           <h2 class="caption">Our Team</h2>
           <ul class="team_ul">
-            <li class="card-team">
-              <img
-                src="./images/mark.jpg"
-                alt="Mark Guerrero"
-                width="264"
-                height="260" />
-              <h3 class="item-desk">Mark Guerrero</h3>
-              <p class="excerpt-text">Product Designer</p>
-            </li>
-            <li class="card-team">
-              <img
-                src="./images/tom.jpg"
-                alt="Tom Ford"
-                width="264"
-                height="260" />
-              <h3 class="item-desk">Tom Ford</h3>
-              <p class="excerpt-text">Frontend Developer</p>
-            </li>
-            <li class="card-team">
-              <img
-                src="./images/camila.jpg"
-                alt="Camila Garcia"
-                width="264"
-                height="260" />
-              <h3 class="item-desk">Camila Garcia</h3>
-              <p class="excerpt-text">Marketing</p>
-            </li>
-            <li class="card-team">
-              <img
-                src="./images/daniel.jpg"
-                alt="Daniel Wilson"
-                width="264"
-                height="260" />
-              <h3 class="item-desk">Daniel Wilson</h3>
-              <p class="excerpt-text">UI Designer</p>
-            </li>
+            <div class="team_conteiner">
+
+              <li class="card-team">
+                <img
+                  src="./images/mark.jpg"
+                  alt="Mark Guerrero"
+                  width="264"
+                  height="260" />
+                <h3 class="item-desk">Mark Guerrero</h3>
+                <p class="excerpt-text">Product Designer</p>
+              </li>
+            </div>
+            <div class="team_conteiner">
+
+              <li class="card-team">
+                <img
+                  src="./images/tom.jpg"
+                  alt="Tom Ford"
+                  width="264"
+                  height="260" />
+                <h3 class="item-desk">Tom Ford</h3>
+                <p class="excerpt-text">Frontend Developer</p>
+              </li>
+            </div>
+            <div class="team_conteiner">
+
+              <li class="card-team">
+                <img
+                  src="./images/camila.jpg"
+                  alt="Camila Garcia"
+                  width="264"
+                  height="260" />
+                <h3 class="item-desk">Camila Garcia</h3>
+                <p class="excerpt-text">Marketing</p>
+              </li>
+            </div>
+            <div class="team_conteiner">
+
+              <li class="card-team">
+                <img
+                  src="./images/daniel.jpg"
+                  alt="Daniel Wilson"
+                  width="264"
+                  height="260" />
+                <h3 class="item-desk">Daniel Wilson</h3>
+                <p class="excerpt-text">UI Designer</p>
+              </li>
+            </div>
           </ul>
         </div>
       </section>

@@ -15,8 +15,10 @@ body {
   padding-left: 16px;
   padding-right: 16px;
   max-width: 1440px;
-  
-  
+
+ img {
+  display: block;
+ }
   
   
   
@@ -58,13 +60,28 @@ a {
   
 }
 
-
-
-.header_inner {
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header_container {
+  
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
 }
+.navi {
+  display: flex;
+  
+}
+.navi-menu {
+  display: flex;
+  gap: 40px;
+  margin-right: 0;
+}
+  
+
 
 /* logo */
 .logo-dark {
@@ -75,11 +92,8 @@ a {
   line-height: 1.17;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  margin-left: 156px;
   margin-right: 76px;
-  padding-bottom: 25.5px;
-  padding-top: 25.5px;
-  margin-right: 76px;
+  
   
 }
 
@@ -88,15 +102,6 @@ a {
 }
 
 
-.navi-menu {
-  
-  padding-bottom: 24px;
-  padding-top: 24px;
-  display: flex;
-  gap: 40px;
-
-
-}
 
 
   
@@ -128,31 +133,29 @@ a {
 
 
 
+
+
+
+
+
+
 /* address */
 .ul_adress {
   display: flex;
-  margin-left: auto;
-}
-  
-  
-  
-  
-
-li:last-child {
+  gap: 40px;
   margin-right: 0;
 }
 
+
 .address-search {
   color: #434455;
-  margin-right: 40px;
-  margin-inline-end:;
-  margin-left: 332px;
+ 
   
 
 }
 .address-tel {
   color: #434455;
-  margin-right: 156px;
+  
   
 }
 .address-link {
@@ -193,6 +196,7 @@ li:last-child {
   background-color: #2e2f42;
   padding-top: 229.2px;
   max-width: 100%;
+  padding: 188px 0 188px
   
  
   
@@ -213,13 +217,7 @@ li:last-child {
   
 }
 /* batton */
-.button-container {
-display: flex;
-justify-content: center;
-align-items: center;
-padding-bottom: 155.54px;
 
-}
 .button-section {
   font-size: 16px;
   font-family: inherit;
@@ -231,9 +229,12 @@ padding-bottom: 155.54px;
   cursor: pointer;
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
-  height: 57px;
+  min-width: 169px;
+  height: 56px;
+   border: none;
   width: auto;
+  display: block;
+  margin: 0 auto;
   
   
 }
@@ -248,6 +249,12 @@ padding-bottom: 155.54px;
 }
 
 /* Our advantages section */
+.hidden {
+  margin-bottom: 8px;
+}
+.section_advantages {
+  padding: 120px 0 120px;
+}
 .our_ul {
   display: flex;
   gap: 24px;
@@ -281,9 +288,18 @@ padding-bottom: 155.54px;
 /* Our team section */
 .team_ul {
   display: flex;
-  padding-top: 72px;
   justify-content: space-between;
+  gap: 24px;
+  padding: 32px 0 32px
   
+}
+.team_conteiner {
+  
+   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background-color: #fff;
+  width: calc((100% - 3 * 24px) / 4);
+  border-radius: 0 0 4px 4px;
+
 }
 .caption {
   
@@ -294,6 +310,7 @@ padding-bottom: 155.54px;
   line-height: 1.11;
   text-transform: capitalize;
   text-align: center;
+  margin-bottom: 72px;
 }
 .item-desk {
   font-weight: 500;
@@ -323,14 +340,12 @@ padding-bottom: 155.54px;
   padding-top: 120px;
 }
 
-.card-team {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  background-color: #fff;
-  width: calc((100% - 3 * 24px) / 4);
-  border-radius: 0 0 4px 4px;
-  
-}
+
 /* Our Portfolio */
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
   .ul_portfolio {
     
@@ -370,7 +385,7 @@ padding-bottom: 155.54px;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-bottom: 74px;
+  margin-bottom: 72px;
 }
 .subtitle {
   font-weight: 500;
@@ -398,6 +413,7 @@ padding-bottom: 155.54px;
   width: 1158px;
   width: 264px;
   height: 112px;
+  padding: 100px 0
   
   
 }
@@ -418,6 +434,8 @@ padding-bottom: 155.54px;
 .logo-light {
   color: #4d5ae5;
   text-transform: uppercase;
+  margin-bottom: 16px;
+  display: inline-block;
 }
 .footer-text {
   color: #f4f4fd;
