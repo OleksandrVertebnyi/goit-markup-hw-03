@@ -68,14 +68,13 @@ a {
   display: flex;
   gap: 40px;
 }
-.navigation {
+.menu-list {
   padding-top: 24px;
   padding-bottom: 24px;
-}
-
-.li_end {
   margin-right: 0;
 }
+
+
 
 /* logo */
 .logo-dark {
@@ -197,7 +196,15 @@ a {
 /* Our advantages section */
 .visually-hidden {
   position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .section_advantages {
   padding: 120px 0 120px;
